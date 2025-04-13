@@ -7,7 +7,7 @@ export const metadata = {
 
 export default async function Novedades() {
 
-    const data = await fetch(`${process.env.REACT_APP_API_URL}/api/novedades`);
+    const data = await fetch(`${process.env.REACT_APP_API_URL}/api/novedades`, { cache: 'no-store' });
     const novedades = await data.json();
     
     return (
