@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-export default function ContactForm() {
+export default function ContactForm({postUrl}) {
 
     const initialForm = {
         nombre: '',
@@ -27,7 +27,8 @@ export default function ContactForm() {
         e.preventDefault();
         setMsg('');
         setSending(true)
-        const rawResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/contacto`, {
+        
+        const rawResponse = await fetch(postUrl, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

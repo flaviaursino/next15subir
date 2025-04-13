@@ -15,7 +15,7 @@ export default function Contacto() {
         <main className="holder contacto">
             <div className="columna">
                 <h2>Complete el siguiente formulario</h2>
-                <ContactForm />
+                <ContactForm postUrl={`${process.env.REACT_APP_API_URL}/api/contacto`}/>
             </div>
             <div className="columna datos">
                 <h2>Otras vias de contacto</h2>
