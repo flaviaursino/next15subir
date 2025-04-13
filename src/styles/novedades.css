@@ -1,0 +1,34 @@
+.novedad {
+    display: flex;
+    border-bottom: 2px solid #6da9ed;
+    padding: 20px 0;
+}
+
+.novedad img {
+    display: block;
+    margin-right: 20px;
+}
+
+.novedad .datos {
+    width: 100%;
+}
+
+.novedad .datos .vermas {
+    text-align: right;
+    display: block;
+
+}
+
+h3,
+h4,
+h6,
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #6da9ed;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
